@@ -83,6 +83,8 @@ body{
 .overlay-text.visible{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     animation: overlay-grow 1000ms forwards;
 }
 
@@ -93,6 +95,6 @@ body{
     }
     to {
         background-color: rgba(0, 0, 0, 0.8);
-        font-size: 4em;
+        font-size: 3em;
     }
 }
