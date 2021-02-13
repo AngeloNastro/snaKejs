@@ -31,6 +31,7 @@ function main(currentTime){
 }
 
 window.requestAnimationFrame(main)
+window.addEventListener('scroll', noScroll);
 
 function update(){
     updateSnake();
