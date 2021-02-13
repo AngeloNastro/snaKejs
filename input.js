@@ -65,7 +65,7 @@ function swipedetect(el, callback){
   
 //USAGE:
 
-var el = document.getElementById('game-board')
+var el = document.getElementById('touchSurface')
 swipedetect(el, function(swipedir){
     switch(swipedir){
         case 'up':

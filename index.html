@@ -9,8 +9,15 @@
     <script src="game.js" defer type="module"></script>
 </head>
 <body class="noselect">
-    <div class="title">snaKejs</div>
-    <div id="touchsurface2">
+    <div id="start-text" class="overlay-text visible">
+        Let's snake 🐍
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        Game Over 😕
+        <span class="overlay-text-small">Try again...</span>
+    </div>
+    <div id="touchSurface">
+        <div class="title">snaKejs</div>
         <div id='game-board'></div>
     </div>
 </body>

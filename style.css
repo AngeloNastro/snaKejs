@@ -27,6 +27,16 @@ body{
     font-size: 3vmin;
 }
 
+#touchSurface{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 #game-board{
     background-color: #2B2C28;
     width: 90vmin;
@@ -49,4 +59,40 @@ body{
     background-color: #F2545B;
     border: .25vmin solid #470004;
     border-radius: 50%;
+}
+
+.overlay-text{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+}
+
+.overlay-text-small{
+    font-size: .3em;
+}
+
+.overlay-text.visible{
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 1000ms forwards;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 4em;
+    }
 }
