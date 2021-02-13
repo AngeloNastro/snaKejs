@@ -10,7 +10,7 @@ const gameBoard = document.getElementById('game-board')
 function main(currentTime){
     if(gameOver){
        if(confirm('You lost. Presso ok to restart.')){
-           window.location = '/';
+           window.location.reload();
        }
        return
     }

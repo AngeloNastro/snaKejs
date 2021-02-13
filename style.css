@@ -1,31 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600|Roboto:100i,400&display=swap");
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
 body{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
     background-color: #131515;
 }
 
+.title{
+    height: 4vmin;
+    color: #646464;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vmin;
+}
+
 #game-board{
     background-color: #2B2C28;
-    width: 100vmin;
-    height: 100vmin;
+    width: 90vmin;
+    height: 90vmin;
     display: grid;
     grid-template-columns: repeat(21, 1fr);
     grid-template-rows: repeat(21, 1fr);
+    border: .25vmin solid #646464;
+    border-radius: 1%;
 }
 
 .snake{
     background-color: #98CE00;
-    border: .25vmin solid #FFFAFB;
+    border: .25vmin solid #3e5500;
     border-radius: 15%;
     margin: 1px;
 }
 
 .food{
     background-color: #F2545B;
-    border: .25vmin solid #131515;
+    border: .25vmin solid #470004;
     border-radius: 50%;
 }
