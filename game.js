@@ -33,6 +33,10 @@ function main(currentTime){
 window.requestAnimationFrame(main)
 window.addEventListener('scroll', noScroll);
 
+function noScroll() {
+    window.scrollTo(0, 0);
+}
+
 function update(){
     updateSnake();
     updateFood();
